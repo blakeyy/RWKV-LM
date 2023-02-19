@@ -29,6 +29,9 @@ class TimeX(torch.autograd.Function):
         ctx.B = B
         ctx.C = C
         ctx.T = T
+        print("ctx.T: ", ctx.T)
+        print("ctx.B: ", ctx.B)
+        print("T_MAX: ", T_MAX)
         assert ctx.T % 4 == 0 and ctx.T <= T_MAX and ctx.B % B_GROUP_FORWARD == 0 and ctx.B % B_GROUP_BACKWARD == 0
         w = w.contiguous()
         k = k.contiguous()
