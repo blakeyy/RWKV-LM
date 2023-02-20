@@ -17,10 +17,10 @@ class Dataset(Dataset):
     def __init__(self, data, ctx_len, epoch_length_fixed):
         print('building token list...', end=' ')
         unique = sorted(list(set(data)))
-        # print()
-        # for u in unique:
-        #     print(u, end=' ')
-        # print('\n\n')
+        print()
+        for u in unique:
+            print(u, end=' ')
+        print('\n\n')
 
         xx = 0
         xxObj = {}
