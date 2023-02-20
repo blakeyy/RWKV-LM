@@ -16,8 +16,8 @@ import datetime
 import sys
 import math
 
-# import wandb  # comment this if you don't have wandb
-# print('logging to wandb... (comment it if you don\'t have wandb)')
+import wandb  # comment this if you don't have wandb
+print('logging to wandb... (comment it if you don\'t have wandb)')
 
 logger = logging.getLogger(__name__)
 torch.backends.cudnn.benchmark = True
